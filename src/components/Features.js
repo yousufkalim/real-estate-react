@@ -25,9 +25,9 @@ const Item = styled(Paper)(({ theme }) => ({
 
  
 
-const Features = () => {
+const Features = ({cRef}) => {
   return (
-    <div className='feature'>
+    <div className='feature'  ref={cRef}>
         <br/><br/><br/><br/><br/>
         <div className='feat1'>
             App Features
@@ -40,59 +40,72 @@ const Features = () => {
         <Box sx={{ flexGrow: 1 }}>
       <Grid container columns={12} className="maingrid">
         <Grid item xs={12} sm={12} md={6} className="grid1">
-            <div>
-            <img src={mobile}  style={{height:'90vh'}}/>
+            <div className='featimg'>
+            <img src={mobile}  style={{height:'80vh'}}/>
             </div>
         </Grid>
-
-
-
+        
         <Grid item xs={12} sm={12} md={6}>
         <Card sx={{ maxWidth: 570, height:160, backgroundColor:'#262626' }} className="message">
       <CardActionArea>
         <CardContent sx={{display: 'flex', justifyContent:'flex-start'}}>
         <CheckBoxIcon className='checkbox'/>
+        <div className='heading'>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            CREATIVE DESIGN
           </Typography>
-          <Typography className="plaintext" variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
+          </div>
+        
         </CardContent>
+        <div className="plaintext" >
+          <Typography variant="body2" color="text.secondary">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
+           Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis<br/> enim.
+           Faucibus amet etiam tincidunt rhoncus, ullamcorper 
+          </Typography>
+          </div>
         </CardActionArea>
     </Card>
     <br/>
-    <Card sx={{ maxWidth: 570, height:160, backgroundColor:'#262626' }}>
-        
-      <CardActionArea className='message'>
+    <Card sx={{ maxWidth: 570, height:160, backgroundColor:'#262626' }} className="message">
+      <CardActionArea>
         <CardContent sx={{display: 'flex', justifyContent:'flex-start'}}>
         <CheckBoxIcon className='checkbox'/>
-          <Typography className="heading" gutterBottom variant="h5" component="div">
-            Lizard
+        <div className='heading'>
+          <Typography gutterBottom variant="h5" component="div">
+            EASY TO USE
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{display:'in'}}>
-              
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-            
-          </Typography>
+          </div>
+        
         </CardContent>
-        </CardActionArea >
+        <div className="plaintext" >
+          <Typography variant="body2" color="text.secondary">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
+           Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis<br/> enim.
+           Faucibus amet etiam tincidunt rhoncus, ullamcorper 
+          </Typography>
+          </div>
+        </CardActionArea>
     </Card>
     <br/>
-    <Card sx={{ maxWidth: 570, height:160, backgroundColor:'#262626' }}>
-      <CardActionArea className='message'>
+    <Card sx={{ maxWidth: 570, height:160, backgroundColor:'#262626' }} className="message">
+      <CardActionArea>
         <CardContent sx={{display: 'flex', justifyContent:'flex-start'}}>
         <CheckBoxIcon className='checkbox'/>
+        <div className='heading'>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            BETTER USE EXPERIENCE
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
+          </div>
+        
         </CardContent>
+        <div className="plaintext" >
+          <Typography variant="body2" color="text.secondary">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
+           Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis<br/> enim.
+           Faucibus amet etiam tincidunt rhoncus, ullamcorper 
+          </Typography>
+          </div>
         </CardActionArea>
     </Card>
         </Grid>

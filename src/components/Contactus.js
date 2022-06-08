@@ -14,9 +14,12 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
   }));
 
-const Contactus = () => {
+const Contactus = ({cRef}) => {
+    // const scroll=()=>{
+    //     myRef.current.scrollIntoView({behavior:"smooth", block:"start"})
+    // }
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} ref={cRef} >
       <Grid container columns={12} className="maingrid">
         <Grid item xs={12} sm={12} md={6} className="grid1">
             <div className='container1'>

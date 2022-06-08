@@ -18,9 +18,10 @@ import AdbIcon from '@mui/icons-material/Adb';
 // Component
 const pages = ['About', 'Features', 'Contact us'];
 
-const Header = () => {
+const Header = ({onNavPress=()=>{}}) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [pageName , setPageName] = React.useState("")
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -36,9 +37,12 @@ const Header = () => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
+const HandlePage = (name) =>{
+  onNavPress(name)
+  setPageName(name)
+}
   return (
-    <AppBar className="nav">
+    <AppBar className="nav" sx={{position:"fixed",background:"#191A1F"}}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img src={logo} sx={{ display: { 
@@ -60,6 +64,7 @@ const Header = () => {
             </IconButton>
             <Menu
               id="menu-appbar"
+              onClick={(e) =>{ HandlePage(e)}}
               anchorEl={anchorElNav}
               anchorOrigin={{
                 vertical: 'bottom',
@@ -77,28 +82,53 @@ const Header = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page}>
+                  <Typography textAlign="center" >{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
+            
           </Box>
           
          
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex',display:"flex",justifyContent:"center" } }}>
-            {pages.map((page) => (
+            
               <Button className="menuitems"
-                key={page}
-                onClick={handleCloseNavMenu}
+                
+                name={"About"}
+                onClick={(e)=> HandlePage( e.target.name)}
                 sx={{ my: 2, color: '#FAFAFA',
                  display: 'block',
                   fontSize:'14px',
                    fontWeight:'700px',
                   margin:'20px' }}
               >
-                {page}
+                About
               </Button>
-            ))}
+              <Button className="menuitems"
+                
+                name={"Features"}
+                onClick={(e)=> HandlePage( e.target.name)}
+                sx={{ my: 2, color: '#FAFAFA',
+                 display: 'block',
+                  fontSize:'14px',
+                   fontWeight:'700px',
+                  margin:'20px' }}
+              >
+                Features
+              </Button>
+              <Button className="menuitems"
+                name={"Contactus"}
+                onClick={(e)=> HandlePage( e.target.name)}
+                sx={{ my: 2, color: '#FAFAFA',
+                 display: 'block',
+                  fontSize:'14px',
+                   fontWeight:'700px',
+                  margin:'20px' }}
+              >
+                Contactus
+              </Button>
+
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>

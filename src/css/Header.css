@@ -11,4 +11,10 @@ background: none !important;
    background-color: #191A1F;
    position: sticky;
  }
+
+ @media only screen and (max-width: 500px) {
+}
+.MuiToolbar-root-MuiToolbar-regular-css-r6ewbb-MuiToolbar-root{
+   position: fixed;
+}
  

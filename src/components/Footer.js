@@ -14,8 +14,18 @@ const Footer = () => {
             <img src={Apple} />{' '}
             <img src={Google} />
             </div>
+            
             <div className='footertext2'>
             <p>Terms & Conditions {' '} Privacy Policy</p>
+        </div>
+        <div className='linefooter'>
+        <hr />
+        </div>
+        <div className='footercopyrights'>
+       <span className='footercopyrights1'> © 2022 </span> Real Estate,
+       <span className='footercopyrights1'> Developed by</span>
+       <span className='footercopyrights2'> Falcon Consulting. </span>
+       <span className='footercopyrights1'> All rights reserved. </span>
         </div>
     </div>
   )

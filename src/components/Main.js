@@ -17,11 +17,12 @@ const Item = styled(Paper)(({ theme }) => ({
     color: theme.palette.text.secondary,
   }));
 
- const Main = () => {
+ const Main = ({cRef}) => {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }} ref={cRef}>
       <Grid container columns={12} className="maingrid">
-        <Grid item xs={12} sm={12} md={6} className="grid1">
+        <Grid item xs={12} sm={12} md={5} className="grid1">
+
             <div className='container'>
             <div className='text'>
                 WE PROVIDE <br/>GREAT SERVICES
@@ -44,16 +45,18 @@ const Item = styled(Paper)(({ theme }) => ({
                 </div>
                 </div>
             
-        </Grid>
-        <Grid item xs={12} sm={12} md={6} className="grid2" sx={{position: "relative", left: 0, top: 0}}>
+         </Grid>
+        <Grid item xs={12} sm={12} md={7} className="grid2" sx={{position: "relative", left: 0, top: 0}}>
         
         <div>
             <img src={MockupBG} className="bgimg" />
             </div>
             <img src={phones} className="frontimg" />
+            
         </Grid>
       </Grid>
     </Box>
+   
   )
 }
 
