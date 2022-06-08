@@ -1,0 +1,90 @@
+
+.container1{
+    color: #FAFAFA;
+    margin: 10vh;
+    margin-top: 25vh;
+    font-family: 'Montserrat';
+    font-style: normal;
+}
+.text2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+.line1{
+    width: 25vh;
+    height: 1vh;
+    background: #837C6B;
+    border-radius: 13px;
+}
+.text3{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.btn:hover{
+    color: #837C6B;
+    /* background:; */
+ }
+ .form{
+     height: 110vh;
+     background-color: #242427;
+     box-shadow: 0px 2.46818px 22.2136px -7.40453px rgba(0, 0, 0, 0.25);
+     border-radius: 30.2352px;
+     margin-top: 25vh;
+}
+.form-control{
+    padding: 5%;
+    color: #D9D9D9;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    background-color:#242427;
+    border: 1px solid #FAFAFA;
+    border-radius: 5.87959px;
+    width: 80%;
+}
+.row1{
+    margin-top: 100px;
+    margin-left: 60px;
+}
+.row2{
+    margin-top: 100px;
+}
+.row3{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.row4{
+    margin-top: 30px;
+}
+.row5{
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 82%;
+    height: 30vh;
+}
+.btn1{
+    margin-left: 60px;
+    margin-top: 50px;
+}
+@media only screen and (max-width: 764px) {
+    .row2 {
+        margin-top: 30px;
+      margin-left: 59px;
+    }
+    .row3{
+        margin-left: 59px;
+    }
+    .row4{
+        margin-left: 59px;
+    }
+    .btn1{
+        margin-left: 120px;
+    }
+    .form{
+        height: 145vh;
+    }
+  }

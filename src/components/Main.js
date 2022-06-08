@@ -46,11 +46,11 @@ const Item = styled(Paper)(({ theme }) => ({
             
         </Grid>
         <Grid item xs={12} sm={12} md={6} className="grid2" sx={{position: "relative", left: 0, top: 0}}>
-        {/* style={{height:'85vh', marginTop:'19vh', marginLeft:'20vh' }} */}
+        
         <div>
-            <img src={MockupBG} className="fishes" />
+            <img src={MockupBG} className="bgimg" />
             </div>
-            <img src={phones} className="fish" />
+            <img src={phones} className="frontimg" />
         </Grid>
       </Grid>
     </Box>

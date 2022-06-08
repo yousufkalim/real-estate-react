@@ -28,7 +28,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const Features = () => {
   return (
     <div className='feature'>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/><br/>
         <div className='feat1'>
             App Features
         </div>
@@ -48,29 +48,14 @@ const Features = () => {
 
 
         <Grid item xs={12} sm={12} md={6}>
-        <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-        </CardActionArea>
-    </Card>
-    <br/>
-    <Card sx={{ maxWidth: 345 }}>
-        
+        <Card sx={{ maxWidth: 570, height:160, backgroundColor:'#262626' }} className="message">
       <CardActionArea>
         <CardContent sx={{display: 'flex', justifyContent:'flex-start'}}>
-        <CheckBoxIcon/>
+        <CheckBoxIcon className='checkbox'/>
           <Typography gutterBottom variant="h5" component="div">
             Lizard
           </Typography>
-          <Typography variant="body2" color="text.secondary">
+          <Typography className="plaintext" variant="body2" color="text.secondary">
             Lizards are a widespread group of squamate reptiles, with over 6,000
             species, ranging across all continents except Antarctica
           </Typography>
@@ -78,9 +63,28 @@ const Features = () => {
         </CardActionArea>
     </Card>
     <br/>
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardContent>
+    <Card sx={{ maxWidth: 570, height:160, backgroundColor:'#262626' }}>
+        
+      <CardActionArea className='message'>
+        <CardContent sx={{display: 'flex', justifyContent:'flex-start'}}>
+        <CheckBoxIcon className='checkbox'/>
+          <Typography className="heading" gutterBottom variant="h5" component="div">
+            Lizard
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{display:'in'}}>
+              
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+            
+          </Typography>
+        </CardContent>
+        </CardActionArea >
+    </Card>
+    <br/>
+    <Card sx={{ maxWidth: 570, height:160, backgroundColor:'#262626' }}>
+      <CardActionArea className='message'>
+        <CardContent sx={{display: 'flex', justifyContent:'flex-start'}}>
+        <CheckBoxIcon className='checkbox'/>
           <Typography gutterBottom variant="h5" component="div">
             Lizard
           </Typography>

@@ -22,7 +22,17 @@ color: #FAFAFA;
 .mobile{
     height: '20px';
 }
-.message{
+.message .css-1cruxbl-MuiCardContent-root{
     text-align: left;
-    background-color: #262626;
+    color: #FAFAFA;
+}
+.checkbox{
+    color: #837C6B;
+    border-radius: 4px;
+}
+.heading .css-h93ljk-MuiTypography-root{
+    margin: 12px;
+}
+.plaintext{
+    display:inline-block !important;
 }

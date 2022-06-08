@@ -28,7 +28,7 @@ font-weight: 300;
 font-size: 22px;
 line-height: 27px;
 }
-.fishes{
+.bgimg{
     margin-top: 20vh;
     position: relative;
     height: 90vh;;
@@ -36,7 +36,7 @@ line-height: 27px;
    
 
 }
-.fish
+.frontimg
     {
       position: absolute;
       top: 30vh;
