@@ -67,17 +67,17 @@ const Contactus = ({cRef}) => {
     </div>
   </div>
   <div className="form-group">
-    <input type="text" class="form-control row5" id="Message" placeholder="Type Your Message"/>
+    <textarea rows='6' type="comment" class="form-control row5" id="Message" placeholder = "Type Your Message"/>
   </div>
-  <button className="btn1" variant="text" style={{background:"#837C6B",
-           color:'#FAFAFA',
+  <button className="btn1" variant="text" style={{
+           
             borderRadius:'56px',
             width:'254px',
             height:'60px',
             border:'none',
             fontSize:'20px',
             fontWeight:'600px'
-            }}>Download App</button>
+            }}> <a href='#'> Download App</a> </button>
 </form>
         </Grid>
       </Grid>

@@ -64,12 +64,26 @@
     margin-top: 30px;
     margin-left: 60px;
     width: 82%;
-    height: 30vh;
+
 }
 .btn1{
+    background-color: #837C6B;
     margin-left: 60px;
     margin-top: 50px;
+    text-decoration: none;
+    
 }
+.btn1 a{
+    color: #FAFAFA;
+}
+.btn1:hover{
+    color: #242427;
+}
+.btn1 a:hover{
+    text-decoration: none;
+    transition: 0.5s;
+    color: #242427;
+ }
 @media only screen and (max-width: 764px) {
     .row2 {
         margin-top: 30px;
@@ -83,7 +97,7 @@
     }
     .btn1{
         margin-left: 90px;
-        margin-top: 0px;
+        margin-top: 5px;
     }
     .form{
         height: 120vh;
