@@ -6,9 +6,11 @@
     font-family: 'Montserrat';
     font-style: normal;
 }
+
 .text2{
+    font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 36px;
+    font-size: 34px;
     line-height: 44px;
 }
 .line1{
@@ -18,7 +20,7 @@
     border-radius: 13px;
 }
 .text3{
-    font-weight: 400;
+    font-weight: 300;
     font-size: 16px;
     line-height: 24px;
 }
@@ -27,31 +29,32 @@
     /* background:; */
  }
  .form{
-     height: 110vh;
+     height: 75vh;
+     width: 90%;
      background-color: #242427;
      box-shadow: 0px 2.46818px 22.2136px -7.40453px rgba(0, 0, 0, 0.25);
      border-radius: 30.2352px;
-     margin-top: 25vh;
+     margin-top: 40vh;
 }
 .form-control{
-    padding: 5%;
+    padding: 4%;
     color: #D9D9D9;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 4px;
     background-color:#242427;
     border: 1px solid #FAFAFA;
     border-radius: 5.87959px;
     width: 80%;
 }
 .row1{
-    margin-top: 100px;
+    margin-top: 40px;
     margin-left: 60px;
 }
 .row2{
-    margin-top: 100px;
+    margin-top: 40px;
 }
 .row3{
     margin-top: 30px;
@@ -69,7 +72,7 @@
 .btn1{
     background-color: #837C6B;
     margin-left: 60px;
-    margin-top: 50px;
+    margin-top: 20px;
     text-decoration: none;
     
 }
@@ -85,24 +88,43 @@
     color: #242427;
  }
 @media only screen and (max-width: 764px) {
+    .row1{
+        margin-left: 40px;
+    }
     .row2 {
         margin-top: 30px;
-      margin-left: 59px;
+      margin-left: 40px;
     }
     .row3{
-        margin-left: 59px;
+        margin-left: 40px;
     }
     .row4{
-        margin-left: 59px;
+        margin-left: 40px;
+    }
+    .row5{
+        margin-left: 40px;
     }
     .btn1{
         margin-left: 90px;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     .form{
-        height: 120vh;
+        height: auto;
+        width: 95%;
+        margin: 3%;
     }
-    .img{
-        margin-left: -90px;
+    .imgquote{
+        margin: 1%;
+        margin-left: -12vh;
+    }
+    .text2{
+        margin: -9vh;
+    }
+    .text3{
+        margin-left: -8vh;
+    }
+    .line1{
+        margin-top: 10vh;
+        margin-left: -9vh;
     }
   }

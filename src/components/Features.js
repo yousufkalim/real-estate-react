@@ -28,7 +28,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const Features = ({cRef}) => {
   return (
     <div className='feature'  ref={cRef}>
-        <br/><br/><br/><br/><br/>
+        <br/><br/><br/><br/>
         <div className='feat1'>
             App Features
         </div>
@@ -36,7 +36,7 @@ const Features = ({cRef}) => {
         <div className='feat2'>
         Lorem Ipsum is simply dummy text of the
          printing and <br/>typesetting industry. Lorem Ipsum has been the industry's
-        </div><br/><br/><br/><br/><br/><br/>
+        </div><br/><br/><br/><br/>
         <Box sx={{ flexGrow: 1 }}>
       <Grid container columns={12} className="maingrid">
         <Grid item xs={12} sm={12} md={6} className="grid1">
@@ -46,7 +46,7 @@ const Features = ({cRef}) => {
         </Grid>
         
         <Grid item xs={12} sm={12} md={6}>
-        <Card sx={{ maxWidth: 570, height:160, backgroundColor:'#262626' }} className="message">
+        <Card sx={{ maxWidth: 500, height:160, backgroundColor:'#262626' }} className="message">
       <CardActionArea>
         <CardContent sx={{display: 'flex', justifyContent:'flex-start'}}>
         <CheckBoxIcon className='checkbox'/>
@@ -60,14 +60,13 @@ const Features = ({cRef}) => {
         <div className="plaintext" >
           <Typography variant="body2" color="text.secondary">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-           Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis<br/> enim.
-           Faucibus amet etiam tincidunt rhoncus, ullamcorper 
+           Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis.
           </Typography>
           </div>
         </CardActionArea>
     </Card>
     <br/>
-    <Card sx={{ maxWidth: 570, height:160, backgroundColor:'#262626' }} className="message">
+    <Card sx={{ maxWidth: 500, height:160, backgroundColor:'#262626' }} className="message">
       <CardActionArea>
         <CardContent sx={{display: 'flex', justifyContent:'flex-start'}}>
         <CheckBoxIcon className='checkbox'/>
@@ -81,14 +80,13 @@ const Features = ({cRef}) => {
         <div className="plaintext" >
           <Typography variant="body2" color="text.secondary">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-           Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis<br/> enim.
-           Faucibus amet etiam tincidunt rhoncus, ullamcorper 
+           Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis
           </Typography>
           </div>
         </CardActionArea>
     </Card>
     <br/>
-    <Card sx={{ maxWidth: 570, height:160, backgroundColor:'#262626' }} className="message">
+    <Card sx={{ maxWidth: 500, height:160, backgroundColor:'#262626' }} className="message">
       <CardActionArea>
         <CardContent sx={{display: 'flex', justifyContent:'flex-start'}}>
         <CheckBoxIcon className='checkbox'/>
@@ -102,8 +100,7 @@ const Features = ({cRef}) => {
         <div className="plaintext" >
           <Typography variant="body2" color="text.secondary">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/>
-           Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis<br/> enim.
-           Faucibus amet etiam tincidunt rhoncus, ullamcorper 
+           Viverra nunc ante velit vitae. Est tellus vitae, nullam lobortis
           </Typography>
           </div>
         </CardActionArea>

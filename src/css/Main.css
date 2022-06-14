@@ -8,12 +8,12 @@
     margin-top: 30vh;
 }
 .text{
-    font-size: 48px;
+    font-size: 40px;
     letter-spacing: 0.03em;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
-line-height: 59px;
+line-height: 50px;
 }
 .line{
     width: 23vh;
@@ -28,8 +28,8 @@ line-height: 59px;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 300;
-font-size: 22px;
-line-height: 27px;
+font-size: 18px;
+line-height: 22px;
 }
 .bgimg{
     margin-top: 20vh;
@@ -47,17 +47,27 @@ line-height: 27px;
     @media only screen and (max-width: 764px) {
         .frontimg{
             width: 100%;
+            margin-top: -250px;
         }
         .bgimg{
             height: auto;
+            margin-top: 30px;
         }
         .text{
-            width: 80%;
+            margin: -10vh;
         }
         .text1{
-            width: 80%;
+            margin: -10vh;
+            margin-top: -12vh;
+        }
+        .line{
+            margin: 100px;
+            margin-left: -90px;
         }
         .img{
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 15% !important;
+            align-items: flex-start;
         }
       }

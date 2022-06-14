@@ -24,7 +24,7 @@ const Footer = () => {
         <div className='footercopyrights'>
        <span className='footercopyrights1'> © 2022 </span> Real Estate,
        <span className='footercopyrights1'> Developed by</span>
-       <span className='footercopyrights2'> Falcon Consulting. </span>
+       <a href="https://www.falconconsulting.fr/" className='footercopyrights2'> Falcon Consulting. </a>
        <span className='footercopyrights1'> All rights reserved. </span>
         </div>
     </div>

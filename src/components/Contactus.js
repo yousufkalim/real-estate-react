@@ -26,7 +26,6 @@ const Contactus = ({cRef}) => {
             <div className='text2'>
             Get a Quote
                 </div>
-                <br/>
                 <div className='line1'>
                 <hr style={{
                     border:'none',
@@ -39,8 +38,7 @@ const Contactus = ({cRef}) => {
                 Faucibus amet etiam tincidunt rhoncus, ullamcorper
                 
                 </div>
-                <br/><br/>
-                <div className='img'>
+                <div className='imgquote'>
                     <img src={quote} />
                 </div>
                 </div>
@@ -67,15 +65,15 @@ const Contactus = ({cRef}) => {
     </div>
   </div>
   <div className="form-group">
-    <textarea rows='6' type="comment" class="form-control row5" id="Message" placeholder = "Type Your Message"/>
+    <textarea rows='16' type="comment" class="form-control row5" id="Message" placeholder = "Type Your Message"/>
   </div>
   <button className="btn1" variant="text" style={{
            
             borderRadius:'56px',
-            width:'254px',
-            height:'60px',
+            width:'200px',
+            height:'45px',
             border:'none',
-            fontSize:'20px',
+            fontSize:'16px',
             fontWeight:'600px'
             }}> <a href='#'> Download App</a> </button>
 </form>

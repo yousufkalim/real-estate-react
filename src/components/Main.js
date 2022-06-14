@@ -27,7 +27,7 @@ const Item = styled(Paper)(({ theme }) => ({
             <div className='text'>
                 WE PROVIDE <br/>GREAT SERVICES
                 </div>
-                <br/>
+                
                 <div className='line'>
                 <hr style={{
                     border:'none',
@@ -44,6 +44,7 @@ const Item = styled(Paper)(({ theme }) => ({
                     <img src={Google} />
                 </div>
                 </div>
+              
             
          </Grid>
         <Grid item xs={12} sm={12} md={7} className="grid2" sx={{position: "relative", left: 0, top: 0}}>

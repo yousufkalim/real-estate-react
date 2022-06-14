@@ -6,7 +6,7 @@
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
-font-size: 36px;
+font-size: 34px;
 line-height: 44px;
 color: #FAFAFA;
 }
@@ -14,7 +14,7 @@ color: #FAFAFA;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 200;
-font-size: 18px;
+font-size: 16px;
 line-height: 22px;
 text-align: center;
 color: #FAFAFA;
@@ -29,26 +29,40 @@ color: #FAFAFA;
 .checkbox{
     color: #837C6B;
     border-radius: 4px;
-    margin: 10px;
+    margin: 6px;
+    border-radius: 10px;
 }
 .heading .css-h93ljk-MuiTypography-root{
+    font-family: 'Montserrat';
+    font-weight: 500;
     margin: 8px;
+    font-size: 16px;
 }
 .plaintext .css-r40f8v-MuiTypography-root{
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 300;
+    font-size: 13px;
     line-height: 24px;
     color: #FAFAFA;
     text-align: left;
     margin-left: 10vh;
+    margin-top: -15px;
 }
 @media only screen and (max-width: 900px) {
-    .featimg{
-        width: auto;
-    }
     .plaintext{
         margin-top: -20px;
+        margin-left: -50px;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .checkbox{
+        margin-left: -190px;
+    }
+    .plaintext{
+     margin-left: -250px;
+    }
+    .message{
+        margin: 2%;
     }
   }

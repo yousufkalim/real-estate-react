@@ -39,4 +39,8 @@ color: #FAFAFA;
 }
 .footercopyrights2{
     text-decoration: underline;
+    color: #FAFAFA;
+}
+.footercopyrights2:hover{
+    color:#837C6B;
 }

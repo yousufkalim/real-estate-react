@@ -14,11 +14,12 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb'; 
-
+import { Hidden } from "@mui/material";
+import { useScrollPosition } from "../hooks/useScrollPosition";
 // Component
 const pages = ['About', 'Features', 'Contact us'];
 
-const Header = ({onNavPress=()=>{}}) => {
+const Header = ({onNavPress=()=>{}}) => { 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [pageName , setPageName] = React.useState("")
@@ -41,8 +42,18 @@ const HandlePage = (name) =>{
   onNavPress(name)
   setPageName(name)
 }
-  return (
-    <AppBar className="nav" sx={{position:"fixed",background:"#191A1F"}}>
+
+function classNames(...classes){
+  return classes.filter(Boolean).join(' ');
+}
+
+const scrollPosition = useScrollPosition();
+console.log(scrollPosition)
+
+return (
+    <AppBar className="nav" sx={{position:"fixed",background:"#191A1F",boxShadow:scrollPosition<=2&&"none"
+  }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <img src={logo} sx={{ display: { 
@@ -52,7 +63,7 @@ const HandlePage = (name) =>{
          
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
+            <IconButton 
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -60,7 +71,7 @@ const HandlePage = (name) =>{
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon/>
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -81,7 +92,7 @@ const HandlePage = (name) =>{
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {pages.map((page) => (
+              {pages.map((page)  => ( 
                 <MenuItem key={page}>
                   <Typography textAlign="center" >{page}</Typography>
                 </MenuItem>
@@ -136,10 +147,10 @@ const HandlePage = (name) =>{
           <button className="btn" variant="text" style={{background:"#837C6B",
            color:'#FAFAFA',
             borderRadius:'56px',
-            width:'254px',
-            height:'60px',
+            width:'240px',
+            height:'50px',
             border:'none',
-            fontSize:'20px',
+            fontSize:'18px',
             fontWeight:'600px'
             }}>Download App</button>
           </Box>
