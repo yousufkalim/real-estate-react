@@ -48,7 +48,7 @@ const Features = ({cRef}) => {
         <Grid item xs={12} sm={12} md={6}>
         <Card sx={{ maxWidth: 500, height:160, backgroundColor:'#262626' }} className="message">
       <CardActionArea>
-        <CardContent sx={{display: 'flex', justifyContent:'flex-start'}}>
+        <CardContent sx={{display: 'flex', justifyContent:'flex-start'}} className="cardcontent">
         <CheckBoxIcon className='checkbox'/>
         <div className='heading'>
           <Typography gutterBottom variant="h5" component="div">
@@ -68,7 +68,7 @@ const Features = ({cRef}) => {
     <br/>
     <Card sx={{ maxWidth: 500, height:160, backgroundColor:'#262626' }} className="message">
       <CardActionArea>
-        <CardContent sx={{display: 'flex', justifyContent:'flex-start'}}>
+        <CardContent sx={{display: 'flex', justifyContent:'flex-start'}} className="cardcontent2">
         <CheckBoxIcon className='checkbox'/>
         <div className='heading'>
           <Typography gutterBottom variant="h5" component="div">
@@ -88,7 +88,7 @@ const Features = ({cRef}) => {
     <br/>
     <Card sx={{ maxWidth: 500, height:160, backgroundColor:'#262626' }} className="message">
       <CardActionArea>
-        <CardContent sx={{display: 'flex', justifyContent:'flex-start'}}>
+        <CardContent sx={{display: 'flex', justifyContent:'flex-start'}} className="cardcontent3">
         <CheckBoxIcon className='checkbox'/>
         <div className='heading'>
           <Typography gutterBottom variant="h5" component="div">
