@@ -53,16 +53,20 @@ line-height: 22px;
             height: auto;
             margin-top: 30px;
         }
+        .container{
+            padding: 2%;
+        }
         .text{
             margin: -10vh;
         }
         .text1{
-            margin: -10vh;
+            padding: 1%;
+            margin: -11vh;
             margin-top: -12vh;
         }
         .line{
             margin: 100px;
-            margin-left: -90px;
+            margin-left: -85px;
         }
         .img{
             display: flex;
