@@ -1,0 +1,83 @@
+.feature{
+    background-color: #191A1F;
+    text-align: center;
+}
+.feat1{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 34px;
+line-height: 44px;
+color: #FAFAFA;
+}
+.feat2{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 200;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+color: #FAFAFA;
+}
+.mobile{
+    height: '20px';
+}
+.message .css-1cruxbl-MuiCardContent-root{
+    text-align: left;
+    color: #FAFAFA;
+}
+.checkbox{
+    color: #837C6B;
+    border-radius: 4px;
+    margin: 6px;
+    border-radius: 10px;
+}
+.heading .css-h93ljk-MuiTypography-root{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin: 8px;
+    font-size: 16px;
+}
+.plaintext .css-r40f8v-MuiTypography-root{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 24px;
+    color: #FAFAFA;
+    text-align: left;
+    margin-left: 10vh;
+    margin-top: -15px;
+}
+@media only screen and (max-width: 900px) {
+    .plaintext{
+        margin-top: -20px;
+        margin-left: -50px;
+    }
+  }
+  @media only screen and (max-width: 420px) {
+    .checkbox{
+        margin-left: -190px;
+    }
+    .plaintext{
+    padding: 2%;
+    }
+    .message{
+        margin: 2%;
+    }
+    .cardcontent{
+        display: flex !important ;
+        justify-content: center !important;
+        margin-left: 6%;
+    }
+     .cardcontent2{
+        display: flex !important ;
+        justify-content: center !important;
+        margin-left: -4%;
+    }
+    .cardcontent3{
+        display: flex !important ;
+        justify-content: center !important;
+        margin-left:25%;
+    }
+  }

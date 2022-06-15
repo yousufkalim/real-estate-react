@@ -1,0 +1,77 @@
+.maingrid{
+    background: #191A1F;
+    
+}
+.container{
+    color: #FAFAFA;
+    margin: 10vh;
+    margin-top: 30vh;
+}
+.text{
+    font-size: 40px;
+    letter-spacing: 0.03em;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+line-height: 50px;
+}
+.line{
+    width: 23vh;
+    height: 1vh;
+    background: #837C6B;
+    border-radius: 13px;
+}
+.abc{
+    overflow: hidden !important;
+}
+.text1{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 22px;
+}
+.bgimg{
+    margin-top: 20vh;
+    position: relative;
+    height: 90vh;;
+    width: 100%;
+    margin-left: 180px;
+}
+.frontimg
+    {
+      position: absolute;
+      top: 30vh;
+      margin-right: 30vh;  
+    }
+    @media only screen and (max-width: 764px) {
+        .frontimg{
+            width: 100%;
+            margin-top: -250px;
+        }
+        .bgimg{
+            height: auto;
+            margin-top: 30px;
+        }
+        .container{
+            padding: 2%;
+        }
+        .text{
+            margin: -10vh;
+        }
+        .text1{
+            padding: 1%;
+            margin: -11vh;
+            margin-top: -12vh;
+        }
+        .line{
+            margin: 100px;
+            margin-left: -85px;
+        }
+        .img{
+            display: flex;
+            flex-direction: column;
+            margin-top: 15% !important;
+            align-items: flex-start;
+        }
+      }

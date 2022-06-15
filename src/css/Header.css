@@ -1,4 +1,40 @@
 /* Header Component Style */
-h1 {
-  color: red;
+.btn:hover{
+   color: #837C6B;
 }
+.menuitems:hover{
+background: none !important;
+}
+.nav.css-11b3ww9-MuiPaper-root-MuiAppBar-root{
+   background-color: #191A1F;
+   position: sticky;
+ }
+
+
+ @media only screen and (max-width: 900px) {
+   .btn{
+      display: none;
+   }
+   .iconbars{
+      display: flex;
+      justify-content: flex-end
+    }
+    .MuiMenuItem-gutters{
+      background-color: green;
+    }
+   }
+.MuiToolbar-root-MuiToolbar-regular-css-r6ewbb-MuiToolbar-root{
+   position: fixed;
+}
+.MuiList-root{
+   background-color: #191A1F;
+   color: #FAFAFA;
+}
+.MuiMenuItem-root:hover{
+   color: #837C6B;
+}
+
+.add-shadow{
+   box-shadow: rgba(0, 0, 0, 0.5) 10px 11px 12px 10px
+}
+
