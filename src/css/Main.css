@@ -1,77 +1,110 @@
-.maingrid{
-    background: #191A1F;
-    
+.maingrid {
+  background: #191a1f;
 }
-.container{
-    color: #FAFAFA;
-    margin: 10vh;
-    margin-top: 30vh;
+.container {
+  color: #fafafa;
+  margin: 10vh;
+  margin-top: 40vh;
 }
-.text{
-    font-size: 40px;
-    letter-spacing: 0.03em;
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 700;
-line-height: 50px;
+.text {
+  font-size: 48px;
+  letter-spacing: 0.03em;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
 }
-.line{
-    width: 23vh;
-    height: 1vh;
-    background: #837C6B;
-    border-radius: 13px;
+.line {
+  width: 23vh;
+  height: 1vh;
+  background: #837c6b;
+  border-radius: 13px;
 }
-.abc{
-    overflow: hidden !important;
+.abc {
+  overflow: hidden !important;
 }
-.text1{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 22px;
+.text1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 22px;
+  padding: 3% 0 3% 0;
 }
-.bgimg{
-    margin-top: 20vh;
-    position: relative;
-    height: 90vh;;
+.bgimg {
+  margin-top: 20vh;
+  position: relative;
+  height: 84vh;
+  width: 100%;
+  margin-left: 50px;
+}
+.frontimg {
+  position: absolute;
+  top: 30vh;
+  margin-right: 30vh;
+}
+.appleImg {
+  width: 29%;
+  margin-right: 15px;
+}
+@media only screen and (max-width: 764px) {
+  .frontimg {
     width: 100%;
-    margin-left: 180px;
+    margin-top: -250px;
+  }
+  .bgimg {
+    height: auto;
+    margin-top: 32px;
+  }
+  .container {
+    padding: 2%;
+    margin: 15vh 0 0 15px !important;
+  }
+  .text {
+    margin: 0vh;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .text1 {
+    padding: 1%;
+    margin: 0;
+    margin-top: 13px;
+    line-height: 30px;
+  }
+  .line {
+    margin: 0;
+    margin-left: 0;
+  }
+  .img {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0% !important;
+    align-items: flex-start;
+  }
+  .appleImg {
+    width: 35%;
+    margin-bottom: 8px;
+  }
 }
-.frontimg
-    {
-      position: absolute;
-      top: 30vh;
-      margin-right: 30vh;  
-    }
-    @media only screen and (max-width: 764px) {
-        .frontimg{
-            width: 100%;
-            margin-top: -250px;
-        }
-        .bgimg{
-            height: auto;
-            margin-top: 30px;
-        }
-        .container{
-            padding: 2%;
-        }
-        .text{
-            margin: -10vh;
-        }
-        .text1{
-            padding: 1%;
-            margin: -11vh;
-            margin-top: -12vh;
-        }
-        .line{
-            margin: 100px;
-            margin-left: -85px;
-        }
-        .img{
-            display: flex;
-            flex-direction: column;
-            margin-top: 15% !important;
-            align-items: flex-start;
-        }
-      }
+@media only screen and (max-width: 1200px) {
+  .container {
+    margin: 5vh;
+    margin-top: 29vh;
+  }
+  .bgimg {
+    margin-top: 20vh;
+    height: 56vh;
+  }
+  .text {
+    font-size: 30px;
+    line-height: 41px;
+  }
+  .text1 {
+    font-size: 19px;
+  }
+
+  .appleImg {
+    width: 34%;
+    margin-right: 15px;
+  }
+}

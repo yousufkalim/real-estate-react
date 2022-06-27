@@ -1,40 +1,48 @@
 /* Header Component Style */
-.btn:hover{
-   color: #837C6B;
+.btn:hover {
+  color: #837c6b;
 }
-.menuitems:hover{
-background: none !important;
+.menuitems:hover {
+  background: none !important;
 }
-.nav.css-11b3ww9-MuiPaper-root-MuiAppBar-root{
-   background-color: #191A1F;
-   position: sticky;
- }
-
-
- @media only screen and (max-width: 900px) {
-   .btn{
-      display: none;
-   }
-   .iconbars{
-      display: flex;
-      justify-content: flex-end
-    }
-    .MuiMenuItem-gutters{
-      background-color: green;
-    }
-   }
-.MuiToolbar-root-MuiToolbar-regular-css-r6ewbb-MuiToolbar-root{
-   position: fixed;
+.nav.css-11b3ww9-MuiPaper-root-MuiAppBar-root {
+  background-color: #191a1f;
+  position: sticky;
 }
-.MuiList-root{
-   background-color: #191A1F;
-   color: #FAFAFA;
-}
-.MuiMenuItem-root:hover{
-   color: #837C6B;
+.btn {
+  width: 194px;
+  height: 45px;
 }
 
-.add-shadow{
-   box-shadow: rgba(0, 0, 0, 0.5) 10px 11px 12px 10px
+@media only screen and (max-width: 900px) {
+  .btn {
+    display: none;
+  }
+  .iconbars {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .MuiMenuItem-gutters {
+    background-color: green;
+  }
+  .headerLogo {
+    width: 20%;
+  }
+  .css-i4bv87-MuiSvgIcon-root {
+    font-size: 2.5rem !important;
+  }
+}
+.MuiToolbar-root-MuiToolbar-regular-css-r6ewbb-MuiToolbar-root {
+  position: fixed;
+}
+.MuiList-root {
+  background-color: #191a1f;
+  color: #fafafa;
+}
+.MuiMenuItem-root:hover {
+  color: #837c6b;
 }
 
+.add-shadow {
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 11px 12px 10px;
+}
