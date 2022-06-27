@@ -14,14 +14,16 @@ const Footer = () => {
         </p>
       </div>
       <div className="imgfooter">
-        <img src={Apple} /> <img src={Google} />
+        <img src={Apple} className="appleImg2" />{" "}
+        <img src={Google} className="appleImg2" />
       </div>
 
       <div className="footertext2">
         <p>
           <a style={{ color: "white" }} href="/terms">
             Terms & Conditions
-          </a>{" "}
+          </a>
+          &nbsp; &nbsp;
           <a style={{ color: "white" }} href="/privacy">
             Privacy Policy
           </a>

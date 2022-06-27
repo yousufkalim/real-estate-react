@@ -1,46 +1,56 @@
-.footer{
-    background-color: #242427;
-    align-items: center;
-    text-align: center;
-    padding: 1%;
+.footer {
+  background-color: #242427;
+  align-items: center;
+  text-align: center;
+  padding: 1%;
 }
-.footertext{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 22px;
-color: #FAFAFA;
-margin: 2%;
+.footertext {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fafafa;
+  margin: 2%;
 }
-.footertext2{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 22px;
-color: #FAFAFA;
-margin: 2%;
+.footertext2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fafafa;
+  margin: 2%;
 }
-.linefooter{
-    background-color: #FAFAFA;
-    opacity: 30%;
+.linefooter {
+  background-color: #fafafa;
+  opacity: 30%;
 }
-.footercopyrights{
-    font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 20px;
-color: #FAFAFA;
+.footercopyrights {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fafafa;
 }
-.footercopyrights1{
-    font-weight: 100;
+.footercopyrights1 {
+  font-weight: 100;
 }
-.footercopyrights2{
-    text-decoration: underline;
-    color: #FAFAFA;
+.footercopyrights2 {
+  text-decoration: underline;
+  color: #fafafa;
 }
-.footercopyrights2:hover{
-    color:#837C6B;
+.footercopyrights2:hover {
+  color: #837c6b;
+}
+.appleImg2 {
+  width: 8%;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 900px) {
+  .appleImg2 {
+    width: 29%;
+  }
 }

@@ -1,130 +1,214 @@
-
-.container1{
-    color: #FAFAFA;
-    margin: 10vh;
-    margin-top: 25vh;
-    font-family: 'Montserrat';
-    font-style: normal;
+.container1 {
+  color: #fafafa;
+  margin: 10vh;
+  margin-top: 25vh;
+  font-family: "Montserrat";
+  font-style: normal;
 }
 
-.text2{
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 44px;
+.text2 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
 }
-.line1{
-    width: 25vh;
-    height: 1vh;
-    background: #837C6B;
-    border-radius: 13px;
+.line1 {
+  width: 25vh;
+  height: 1vh;
+  background: #837c6b;
+  border-radius: 13px;
 }
-.text3{
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 24px;
+.text3 {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 3% 13% 0 0;
 }
-.btn:hover{
-    color: #837C6B;
-    /* background:; */
- }
- .form{
-     height: 75vh;
-     width: 90%;
-     background-color: #242427;
-     box-shadow: 0px 2.46818px 22.2136px -7.40453px rgba(0, 0, 0, 0.25);
-     border-radius: 30.2352px;
-     margin-top: 40vh;
+.btn:hover {
+  color: #837c6b;
+  /* background:; */
 }
-.form-control{
-    padding: 4%;
-    color: #D9D9D9;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 4px;
-    background-color:#242427;
-    border: 1px solid #FAFAFA;
-    border-radius: 5.87959px;
-    width: 80%;
+.form {
+  height: 80vh;
+  width: 90%;
+  background-color: #242427;
+  box-shadow: 0px 2.46818px 22.2136px -7.40453px rgb(0 0 0 / 25%);
+  border-radius: 30.2352px;
+  margin-top: 25vh;
+  padding: 4% 0;
 }
-.row1{
-    margin-top: 40px;
-    margin-left: 60px;
+.form-control {
+  padding: 4%;
+  color: #d9d9d9;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 4px;
+  background-color: #242427;
+  border: 1px solid #fafafa;
+  border-radius: 5.87959px;
+  width: 80%;
 }
-.row2{
-    margin-top: 40px;
+.row1 {
+  margin-top: 40px;
+  margin-left: 60px;
 }
-.row3{
-    margin-top: 30px;
-    margin-left: 60px;
+.row2 {
+  margin-top: 40px;
 }
-.row4{
-    margin-top: 30px;
+.row3 {
+  margin-top: 30px;
+  margin-left: 60px;
 }
-.row5{
-    margin-top: 30px;
-    margin-left: 60px;
-    width: 82%;
-
+.row4 {
+  margin-top: 30px;
 }
-.btn1{
-    background-color: #837C6B;
-    margin-left: 60px;
-    margin-top: 20px;
-    text-decoration: none;
-    
+.row5 {
+  margin-top: 30px;
+  margin-left: 60px;
+  width: 82%;
+  height: 27vh;
+  /* background: none !important; */
 }
-.btn1 a{
-    color: #FAFAFA;
+.btn1 {
+  background-color: #837c6b;
+  margin-left: 60px;
+  margin-top: 10%;
+  text-decoration: none;
+  padding: 2% 7%;
 }
-.btn1:hover{
-    color: #242427;
+.btn1 a {
+  color: #fafafa;
 }
-.btn1 a:hover{
-    text-decoration: none;
-    transition: 0.5s;
-    color: #242427;
- }
+.btn1:hover {
+  color: #242427;
+}
+.btn1 a:hover {
+  text-decoration: none;
+  transition: 0.5s;
+  color: #242427;
+}
+.contactus_headings {
+  margin-left: 8%;
+}
+.form-group {
+  margin-bottom: 0% !important;
+  padding-right: 17px !important;
+}
+.imgquote {
+  height: 70vh;
+}
+.css-1fyyp8j-MuiGrid-root {
+  padding: 0 0 3% 0 !important;
+}
+/* .css-i9gxme {
+  padding: 0 0 3% 0 !important;
+} */
 @media only screen and (max-width: 764px) {
-    .row1{
-        margin-left: 40px;
-    }
-    .row2 {
-        margin-top: 30px;
-      margin-left: 40px;
-    }
-    .row3{
-        margin-left: 40px;
-    }
-    .row4{
-        margin-left: 40px;
-    }
-    .row5{
-        margin-left: 40px;
-    }
-    .btn1{
-        margin-left: 90px;
-        margin-top: 10px;
-    }
-    .form{
-        height: auto;
-        width: 95%;
-        margin: 3%;
-    }
-    .imgquote{
-        margin: 1%;
-        margin-left: -12vh;
-    }
-    .text2{
-        margin: -9vh;
-    }
-    .text3{
-        margin-left: -8vh;
-    }
-    .line1{
-        margin-top: 10vh;
-        margin-left: -9vh;
-    }
+  .row1 {
+    margin-left: 40px;
   }
+  .row2 {
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+  .row3 {
+    margin-left: 40px;
+  }
+  .row4 {
+    margin-left: 40px;
+  }
+  .row5 {
+    margin-left: 40px;
+    height: 18vh;
+  }
+  .btn1 {
+    margin-left: 36px;
+    margin-top: 25px;
+    padding: 2% 12%;
+  }
+  .form {
+    height: auto;
+    width: 95%;
+    margin: 3%;
+  }
+  .imgquote {
+    margin: 0%;
+    margin-left: 0;
+    height: 43vh;
+  }
+  .text2 {
+    margin: 0vh;
+    font-size: 30px;
+  }
+  .text3 {
+    margin-left: 0vh;
+  }
+  .line1 {
+    margin-top: 0vh;
+    margin-left: 0vh;
+  }
+  .css-1fyyp8j-MuiGrid-root {
+    padding: 0 0px 3% 0 !important;
+    margin: -1px 15px !important;
+  }
+  .plaintext .css-r40f8v-MuiTypography-root {
+    margin-left: 90px;
+    margin-top: -10px;
+  }
+  .container1 {
+    margin: 0vh;
+    margin-top: 2vh;
+  }
+  .contactus_headings {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .container1 {
+    margin: 0vh;
+    margin-top: 10vh;
+  }
+  .imgquote {
+    height: 55vh;
+  }
+  .form {
+    height: 67vh;
+    width: 92%;
+    margin-top: 11vh;
+    padding: 4% 0;
+  }
+  .form-row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .form-control {
+    width: 88%;
+    margin-left: 25px;
+  }
+  .row1 {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .row2 {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .row3 {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .row4 {
+    margin-top: 30px;
+    margin-left: 0px;
+  }
+  .btn1 {
+    background-color: #837c6b;
+    margin-left: 25px;
+    margin-top: 10%;
+    text-decoration: none;
+    padding: 2% 14%;
+  }
+}
