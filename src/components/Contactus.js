@@ -39,7 +39,11 @@ const Contactus = ({ cRef }) => {
               </div>
             </div>
             <div className="imgquote">
-              <img src={quote} style={{ width: "100%", height: "100%" }} />
+              <img
+                src={quote}
+                style={{ width: "32vw" }}
+                className="qoute_img"
+              />
             </div>
           </div>
         </Grid>

@@ -24,35 +24,29 @@ const Item = styled(Paper)(({ theme }) => ({
 const Features = ({ cRef }) => {
   return (
     <div className="feature" ref={cRef}>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div className="feat1">App Features</div>
-      <br />
-      <div className="feat2">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's
+      <div className="Features_content">
+        <div className="feat1">App Features</div>
+        <div className="feat2">
+          Lorem Ipsum is simply dummy text of the printing and <br />{" "}
+          typesetting industry. Lorem Ipsum has been the industry's
+        </div>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
       <Box sx={{ flexGrow: 1 }}>
         <Grid container columns={12} className="maingrid">
           <Grid item xs={12} sm={12} md={6} className="grid1">
             <div className="featimg">
-              <img src={mobile} style={{ width: "100%", height: "100%" }} />
+              <img
+                src={mobile}
+                style={{ width: "44vw" }}
+                className="app_mobile_img"
+              />
             </div>
           </Grid>
 
-          <Grid item xs={12} sm={12} md={6}>
+          <Grid item xs={12} sm={12} md={6} margin="auto">
             <Card
               sx={{
-                maxWidth: 500,
-                height: 160,
                 backgroundColor: "#262626",
-                margin: "auto",
               }}
               className="message"
             >
@@ -63,27 +57,22 @@ const Features = ({ cRef }) => {
                 >
                   <CheckBoxIcon className="checkbox" />
                   <div className="heading">
-                    <Typography gutterBottom variant="h5" component="div">
-                      CREATIVE DESIGN
-                    </Typography>
+                    <p className="card_title">CREATIVE DESIGN</p>
                   </div>
                 </CardContent>
                 <div className="plaintext">
-                  <Typography variant="body2" color="text.secondary">
+                  <p className="card_p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Viverra nunc ante velit vitae. Est tellus vitae, nullam
                     lobortis.
-                  </Typography>
+                  </p>
                 </div>
               </CardActionArea>
             </Card>
             <br />
             <Card
               sx={{
-                maxWidth: 500,
-                height: 160,
                 backgroundColor: "#262626",
-                margin: "auto",
               }}
               className="message"
             >
@@ -94,27 +83,22 @@ const Features = ({ cRef }) => {
                 >
                   <CheckBoxIcon className="checkbox" />
                   <div className="heading">
-                    <Typography gutterBottom variant="h5" component="div">
-                      EASY TO USE
-                    </Typography>
+                    <p className="card_title">EASY TO USE</p>
                   </div>
                 </CardContent>
                 <div className="plaintext">
-                  <Typography variant="body2" color="text.secondary">
+                  <p className="card_p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Viverra nunc ante velit vitae. Est tellus vitae, nullam
                     lobortis
-                  </Typography>
+                  </p>
                 </div>
               </CardActionArea>
             </Card>
             <br />
             <Card
               sx={{
-                maxWidth: 500,
-                height: 160,
                 backgroundColor: "#262626",
-                margin: "auto",
               }}
               className="message"
             >
@@ -125,18 +109,15 @@ const Features = ({ cRef }) => {
                 >
                   <CheckBoxIcon className="checkbox" />
                   <div className="heading">
-                    <Typography gutterBottom variant="h5" component="div">
-                      BETTER USE EXPERIENCE
-                    </Typography>
+                    <p className="card_title">BETTER USE EXPERIENCE</p>
                   </div>
                 </CardContent>
                 <div className="plaintext">
-                  <Typography variant="body2" color="text.secondary">
+                  <p className="card_p">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    <br />
                     Viverra nunc ante velit vitae. Est tellus vitae, nullam
                     lobortis
-                  </Typography>
+                  </p>
                 </div>
               </CardActionArea>
             </Card>
