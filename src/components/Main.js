@@ -58,7 +58,7 @@ const Main = ({ cRef }) => {
           className="grid2"
           sx={{ position: "relative", left: 0, top: 0 }}
         >
-          <div>
+          <div className="main_mobile_bg_div">
             <img src={MockupBG} className="bgimg" />
           </div>
           {/* <img src={phones} className="frontimg" /> */}

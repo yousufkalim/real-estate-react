@@ -29,8 +29,9 @@
   /* background:; */
 }
 .form {
-  height: 80vh;
+  /* height: 80vh; */
   width: 90%;
+  margin: auto;
   background-color: #242427;
   box-shadow: 0px 2.46818px 22.2136px -7.40453px rgb(0 0 0 / 25%);
   border-radius: 30.2352px;
@@ -49,34 +50,30 @@
   border: 1px solid #fafafa;
   border-radius: 5.87959px;
   width: 80%;
+  margin: auto;
 }
-.row1 {
-  margin-top: 40px;
-  margin-left: 60px;
-}
-.row2 {
-  margin-top: 40px;
-}
-.row3 {
-  margin-top: 30px;
-  margin-left: 60px;
-}
+.row1,
+.row2,
+.row3,
 .row4 {
-  margin-top: 30px;
+  margin-top: 40px;
+  /* margin-left: 60px; */
+  background: none !important;
+  color: #fff !important;
 }
 .row5 {
   margin-top: 30px;
-  margin-left: 60px;
-  width: 82%;
+  width: 90%;
   height: 27vh;
-  /* background: none !important; */
+  background: none !important;
+  color: #fff !important;
 }
 .btn1 {
+  font-weight: 600;
   background-color: #837c6b;
-  margin-left: 60px;
-  margin-top: 10%;
   text-decoration: none;
-  padding: 2% 7%;
+  padding: 1.5% 7%;
+  margin: 6% 0 3% 5%;
 }
 .btn1 a {
   color: #fafafa;
@@ -90,22 +87,26 @@
   color: #242427;
 }
 .contactus_headings {
-  margin-left: 8%;
+  margin-left: 0%;
 }
 .form-group {
   margin-bottom: 0% !important;
-  padding-right: 17px !important;
+  padding-right: 0 !important;
 }
 .imgquote {
-  height: 71vh;
-  margin: 0 0 0 -73px;
+  margin: 0 0 0 -5%;
 }
 .css-1fyyp8j-MuiGrid-root {
-  padding: 0 0 3% 0 !important;
+  padding: 0 0 0% 0 !important;
 }
 /* .css-i9gxme {
   padding: 0 0 3% 0 !important;
 } */
+.form-row {
+  display: flex;
+  margin-right: 0px !important;
+  margin-left: 0 !important;
+}
 @media only screen and (max-width: 764px) {
   .row1 {
     margin-left: 40px;
@@ -130,14 +131,16 @@
     padding: 2% 12%;
   }
   .form {
-    height: auto;
     width: 95%;
     margin: 3%;
   }
   .imgquote {
-    margin: 0%;
+    margin: auto;
     margin-left: 0;
-    height: 43vh;
+    /* height: 43vh; */
+  }
+  .qoute_img {
+    width: 96vw !important;
   }
   .text2 {
     margin: 0vh;
@@ -170,46 +173,46 @@
 @media only screen and (max-width: 1200px) {
   .container1 {
     margin: 0vh;
-    margin-top: 10vh;
+    margin-top: 5vh;
   }
   .imgquote {
-    height: 55vh;
+    /* height: 55vh; */
   }
   .form {
-    height: 67vh;
-    width: 92%;
-    margin-top: 11vh;
-    padding: 4% 0;
+    width: 100%;
+    margin-top: 5vh;
+    padding: 0% 0;
   }
   .form-row {
     margin-right: 0;
     margin-left: 0;
+    width: 90%;
+    margin: auto !important;
   }
   .form-control {
-    width: 88%;
-    margin-left: 25px;
+    width: 98%;
   }
-  .row1 {
-    margin-top: 30px;
-    margin-left: 20px;
-  }
-  .row2 {
-    margin-top: 30px;
-    margin-left: 0px;
-  }
-  .row3 {
-    margin-top: 30px;
-    margin-left: 20px;
-  }
+  .row1,
+  .row2,
+  .row3,
   .row4 {
     margin-top: 30px;
     margin-left: 0px;
   }
+  .row5 {
+    width: 90%;
+    margin: 30px auto 0 auto;
+    height: 21vh;
+  }
   .btn1 {
     background-color: #837c6b;
-    margin-left: 25px;
+    margin-left: 35px;
     margin-top: 10%;
     text-decoration: none;
     padding: 2% 14%;
+  }
+  .maingrid {
+    width: 90% !important;
+    margin: auto;
   }
 }

@@ -1,10 +1,10 @@
-.maingrid {
+body {
   background: #191a1f;
 }
 .container {
   color: #fafafa;
   margin: 10vh;
-  margin-top: 40vh;
+  margin-top: 37vh;
 }
 .text {
   font-size: 48px;
@@ -31,12 +31,9 @@
   line-height: 22px;
   padding: 3% 0 3% 0;
 }
+
 .bgimg {
   margin-top: 20vh;
-  position: relative;
-  height: 84vh;
-  width: 100%;
-  margin-left: 50px;
 }
 .frontimg {
   position: absolute;
@@ -47,14 +44,15 @@
   width: 29%;
   margin-right: 15px;
 }
-@media only screen and (max-width: 764px) {
+@media only screen and (max-width: 899px) {
   .frontimg {
     width: 100%;
     margin-top: -250px;
   }
+
   .bgimg {
-    height: auto;
-    margin-top: 32px;
+    width: 98vw;
+    margin-top: 3px;
   }
   .container {
     padding: 2%;
@@ -86,14 +84,14 @@
     margin-bottom: 8px;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
   .container {
     margin: 5vh;
     margin-top: 29vh;
   }
   .bgimg {
     margin-top: 20vh;
-    height: 56vh;
+    width: 57vw;
   }
   .text {
     font-size: 30px;

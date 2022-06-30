@@ -1,3 +1,7 @@
+p {
+  margin-bottom: 0 !important;
+}
+
 .feature {
   background-color: #191a1f;
   text-align: center;
@@ -10,6 +14,7 @@
   font-size: 34px;
   line-height: 44px;
   color: #fafafa;
+  padding: 15px 0;
 }
 .feat2 {
   font-family: "Montserrat";
@@ -28,9 +33,12 @@
   text-align: left;
   color: #fafafa;
 }
+.css-1cruxbl-MuiCardContent-root {
+  padding: 0 !important;
+}
 .checkbox {
   color: #837c6b;
-  margin: 6px;
+  /* margin: 6px; */
   border-radius: 10px;
 }
 .heading .css-h93ljk-MuiTypography-root {
@@ -43,16 +51,48 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 16px !important;
   line-height: 24px;
   color: #fafafa;
   text-align: left;
   margin-left: 8vh;
   margin-top: -15px;
+  padding-bottom: 4% !important;
 }
 .featimg {
   margin: -50px 0 0 48px;
   width: 100%;
+}
+.css-1jluznr {
+  color: #fff !important;
+}
+.css-u30lmt {
+  margin: 0px 53px !important;
+  color: #fff !important;
+}
+.main_mobile_bg_div {
+  position: relative;
+  right: -15px;
+}
+.message {
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+}
+.card_title {
+  font-size: 18px;
+  padding-left: 10px;
+  color: #fff !important;
+}
+.card_p {
+  font-size: 17px;
+  padding-left: 35px;
+  color: #fafafa !important;
+  text-align: left;
+  padding-top: 6px;
+}
+.Features_content {
+  padding: 3% 0 5% 0;
 }
 @media only screen and (min-width: 1600px) and (max-width: 2000px) {
   .featimg {
@@ -71,6 +111,9 @@
     margin-left: 6.5vh;
     margin-top: -6px;
   }
+  .css-10i4q0c-MuiPaper-root-MuiCard-root {
+    height: inherit !important;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .css-10i4q0c-MuiPaper-root-MuiCard-root {
@@ -83,13 +126,25 @@
     padding: 0 15% 2% 15%;
   }
   .featimg {
-    margin: -50px 0 0 0px;
+    margin: auto;
+  }
+  .message {
+    margin: auto;
+    width: 92%;
+  }
+  .card_p {
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 900px) {
-  .plaintext {
-    margin-top: -20px;
-    margin-left: -50px;
+  .checkbox {
+    margin-left: 0;
+    width: 0.6em !important;
+    height: 0.6em !important;
+  }
+  .message {
+    margin: auto;
+    width: 92%;
   }
   .feature {
     padding: 0% 0 0 0;
@@ -100,30 +155,55 @@
   .appleImg2 {
     width: 29%;
   }
+  .css-u30lmt {
+    margin: 0px 0 0 19% !important;
+  }
+  .app_mobile_img {
+    width: 80vw !important;
+  }
+  .Features_content {
+    padding: 15% 0 5% 0;
+  }
+  .card_p {
+    font-size: 15px;
+  }
 }
 @media only screen and (max-width: 420px) {
   .checkbox {
-    margin-left: -190px;
+    margin-left: 0;
+    width: 0.6em !important;
+    height: 0.6em !important;
   }
   .plaintext {
-    padding: 2%;
+    /* padding: 2%; */
   }
   .message {
-    margin: 2%;
+    margin: auto;
+    width: 92%;
   }
   .cardcontent {
-    display: flex !important ;
-    justify-content: center !important;
-    margin-left: 6%;
+    margin-left: 0%;
   }
   .cardcontent2 {
     display: flex !important ;
-    justify-content: center !important;
-    margin-left: -4%;
   }
   .cardcontent3 {
     display: flex !important ;
-    justify-content: center !important;
-    margin-left: 25%;
+  }
+  .card_p {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1520px) {
+  .main_mobile_bg_div {
+    position: relative;
+    right: -13%;
+  }
+}
+
+@media only screen and (min-width: 1720px) {
+  .main_mobile_bg_div {
+    position: relative;
+    right: -28%;
   }
 }
