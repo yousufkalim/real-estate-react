@@ -4,6 +4,8 @@ import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import quote from "../images/quote.svg";
+import "../utils/i18n";
+import { useTranslation } from "react-i18next";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -14,6 +16,7 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Contactus = ({ cRef }) => {
+  const { i18n, t } = useTranslation();
   // const scroll=()=>{
   //     myRef.current.scrollIntoView({behavior:"smooth", block:"start"})
   // }
@@ -23,7 +26,7 @@ const Contactus = ({ cRef }) => {
         <Grid item xs={12} sm={12} md={6} className="grid1">
           <div className="container1">
             <div className="contactus_headings">
-              <div className="text2">Get a Quote</div>
+              <div className="text2">{t("Get a Quote")}</div>
               <div className="line1">
                 <hr
                   style={{
@@ -55,7 +58,7 @@ const Contactus = ({ cRef }) => {
                   type="email"
                   class="form-control row1"
                   id="inputName4"
-                  placeholder="Your Name"
+                  placeholder={t("Your Name")}
                 />
               </div>
               <div className="form-group col-md-6">
@@ -63,7 +66,7 @@ const Contactus = ({ cRef }) => {
                   type="password"
                   class="form-control row2"
                   id="inputEmail4"
-                  placeholder="Email"
+                  placeholder={t("Email")}
                 />
               </div>
             </div>
@@ -73,7 +76,7 @@ const Contactus = ({ cRef }) => {
                   type="email"
                   class="form-control row3"
                   id="inputPhone4"
-                  placeholder="Phone"
+                  placeholder={t("Phone")}
                 />
               </div>
               <div className="form-group col-md-6">
@@ -81,7 +84,7 @@ const Contactus = ({ cRef }) => {
                   type="password"
                   class="form-control row4"
                   id="inputBudget4"
-                  placeholder="Budget"
+                  placeholder={t("Budget")}
                 />
               </div>
             </div>
@@ -91,7 +94,7 @@ const Contactus = ({ cRef }) => {
                 type="comment"
                 class="form-control row5"
                 id="Message"
-                placeholder="Type Your Message"
+                placeholder={t("Type Your Message")}
               />
             </div>
             <button
@@ -107,7 +110,7 @@ const Contactus = ({ cRef }) => {
               }}
             >
               {" "}
-              <a href="#"> Send</a>{" "}
+              <a href="#"> {t("Send")}</a>{" "}
             </button>
           </form>
         </Grid>
