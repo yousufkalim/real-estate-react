@@ -12,7 +12,8 @@ import Avatar from "@mui/material/Avatar";
 import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import { color } from "@mui/system";
 import { CardActionArea } from "@mui/material";
-
+import "../utils/i18n";
+import { useTranslation } from "react-i18next";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -22,13 +23,14 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Features = ({ cRef }) => {
+  const { i18n, t } = useTranslation();
   return (
     <div className="feature" ref={cRef}>
       <div className="Features_content">
-        <div className="feat1">App Features</div>
+        <div className="feat1">{t("App Features")}</div>
         <div className="feat2">
-          Lorem Ipsum is simply dummy text of the printing and <br />{" "}
-          typesetting industry. Lorem Ipsum has been the industry's
+        {t("Economic services provided by the finance industry, which encompasses")}<br></br> {t("a broad range of businesses that manage money, including credit unions.")}
+          
         </div>
       </div>
       <Box sx={{ flexGrow: 1 }}>
@@ -57,14 +59,12 @@ const Features = ({ cRef }) => {
                 >
                   <CheckBoxIcon className="checkbox" />
                   <div className="heading">
-                    <p className="card_title">CREATIVE DESIGN</p>
+                    <p className="card_title">{t("CREATIVE DESIGN")}</p>
                   </div>
                 </CardContent>
                 <div className="plaintext">
                   <p className="card_p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Viverra nunc ante velit vitae. Est tellus vitae, nullam
-                    lobortis.
+                  {t("Creativity is the act of turning new and imaginative ideas into reality. Creativity involves two processes: thinking, then producing. Innovation is the production or implementation of an idea.")}
                   </p>
                 </div>
               </CardActionArea>
@@ -83,7 +83,7 @@ const Features = ({ cRef }) => {
                 >
                   <CheckBoxIcon className="checkbox" />
                   <div className="heading">
-                    <p className="card_title">EASY TO USE</p>
+                    <p className="card_title">{t("EASY TO USE")}</p>
                   </div>
                 </CardContent>
                 <div className="plaintext">
@@ -109,14 +109,13 @@ const Features = ({ cRef }) => {
                 >
                   <CheckBoxIcon className="checkbox" />
                   <div className="heading">
-                    <p className="card_title">BETTER USE EXPERIENCE</p>
+                    <p className="card_title">{t("BETTER USE EXPERIENCE")}</p>
                   </div>
                 </CardContent>
                 <div className="plaintext">
                   <p className="card_p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Viverra nunc ante velit vitae. Est tellus vitae, nullam
-                    lobortis
+                 {t ("The goal of user experience design is to improve customer satisfaction and loyalty through the utility, ease of use, and pleasure provided in the interaction with a product")}
+
                   </p>
                 </div>
               </CardActionArea>

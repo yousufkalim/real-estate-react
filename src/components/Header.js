@@ -16,10 +16,13 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { Hidden } from "@mui/material";
 import { useScrollPosition } from "../hooks/useScrollPosition";
+import "../utils/i18n";
+import { useTranslation } from "react-i18next";
 // Component
 const pages = ["About", "Features", "Contact us"];
 
 const Header = ({ onNavPress = () => {} }) => {
+  const { i18n, t } = useTranslation();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
   const [pageName, setPageName] = React.useState("");
@@ -140,7 +143,8 @@ const Header = ({ onNavPress = () => {} }) => {
                 margin: "20px",
               }}
             >
-              About
+  
+             {t("About")}
             </Button>
             <Button
               className="menuitems"
@@ -155,7 +159,7 @@ const Header = ({ onNavPress = () => {} }) => {
                 margin: "20px",
               }}
             >
-              Features
+             {t("Features")}
             </Button>
             <Button
               className="menuitems"
@@ -170,9 +174,37 @@ const Header = ({ onNavPress = () => {} }) => {
                 margin: "20px",
               }}
             >
-              Contactus
+              {t("Contactus")}
             </Button>
           </Box>
+
+
+
+
+ <button className="flag01" style={{border:"none" ,outline:"none",  width: "38px",height: "20px" , position:'relative',
+    left:' -29px' }} onClick={() => i18n.changeLanguage("en")}>
+        <img
+          alt="English"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1200px-Flag_of_the_United_Kingdom.svg.png"
+          style={{    width: "38px",height: "20px" , marginTop: "-7px", cursor:"pointer"
+        }}
+          className="flags-appbar langFlags"
+        />
+      </button>
+      <button className="flag02"  style={{border:"none" , outline:"none",  width: "38px",height: "20px" , position:'relative',
+    left:' -13px' }}onClick={() => i18n.changeLanguage("fr")}>
+        <img
+          alt="France"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png"
+          style={{    width: "38px",height: "20px" , marginTop: "-7px",cursor:"pointer"
+      }}
+          className="flags-appbar langFlags"
+        />
+      </button>
+
+
+
+
 
           <Box sx={{ flexGrow: 0 }}>
             <button
@@ -187,7 +219,7 @@ const Header = ({ onNavPress = () => {} }) => {
                 fontWeight: "600px",
               }}
             >
-              Download App
+              {t("Download App")}
             </button>
           </Box>
         </Toolbar>

@@ -7,6 +7,8 @@ import Apple from "../images/Apple.png";
 import Google from "../images/Google.png";
 import MockupBG from "../assets/MockupBG.png";
 import phones from "../images/phones.svg";
+import "../utils/i18n";
+import { useTranslation } from "react-i18next";
 
 const Item = styled(Paper)(({ theme }) => ({
   // backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -17,14 +19,15 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Main = ({ cRef }) => {
+    const { i18n, t } = useTranslation();
   return (
     <Box sx={{ flexGrow: 1 }} ref={cRef}>
       <Grid container columns={12} className="maingrid">
         <Grid item xs={12} sm={12} md={5} className="grid1">
           <div className="container">
             <div className="text">
-              WE PROVIDE <br />
-              GREAT SERVICES
+             {t("WE PROVIDE")} <br />
+             {t("GREAT SERVICES")}
             </div>
 
             <div className="line">
@@ -35,12 +38,12 @@ const Main = ({ cRef }) => {
               />
             </div>
             <div className="text1">
-              Software House with a team of experienced
-              <br /> developers and project managers.
+{t ("Software House with a team of experienced")}
+              <br /> {t("developers and project managers.")}
               <br />
-              We provide ourselves in delivering high-
+              {t ("We provide ourselves in delivering high-")}
               <br />
-              quality work for our partners.
+              {t("quality work for our partners.")}
             </div>
             <br />
 

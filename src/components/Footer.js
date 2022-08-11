@@ -2,8 +2,11 @@ import React from "react";
 import logo from "../images/logo.png";
 import Apple from "../images/Apple.png";
 import Google from "../images/Google.png";
+import "../utils/i18n";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { i18n, t } = useTranslation();
   return (
     <div className="footer">
       <img src={logo} />
@@ -21,11 +24,11 @@ const Footer = () => {
       <div className="footertext2">
         <p>
           <a style={{ color: "white" }} href="/terms">
-            Terms & Conditions
+            {t ("Terms & Conditions")}
           </a>
           &nbsp; &nbsp;
           <a style={{ color: "white" }} href="/privacy">
-            Privacy Policy
+            {t("Privacy Policy")}
           </a>
         </p>
       </div>
@@ -33,8 +36,8 @@ const Footer = () => {
         <hr />
       </div>
       <div className="footercopyrights">
-        <span className="footercopyrights1"> © 2022 </span> Real Estate,
-        <span className="footercopyrights1"> Developed by</span>
+        <span className="footercopyrights1"> © 2022 </span> {t("Real Estate,")}
+        <span className="footercopyrights1"> {t("Developed by")}</span>
         <a
           href="https://www.falconconsulting.fr/"
           target="blank"
@@ -43,7 +46,7 @@ const Footer = () => {
           {" "}
           Falcon Consulting.{" "}
         </a>
-        <span className="footercopyrights1"> All rights reserved. </span>
+        <span className="footercopyrights1"> {t("All rights reserved.")} </span>
       </div>
     </div>
   );
