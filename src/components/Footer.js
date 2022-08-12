@@ -12,8 +12,7 @@ const Footer = () => {
       <img src={logo} />
       <div className="footertext">
         <p>
-          Lorem Ipsum is simply dummy text of
-          <br /> the printing and typesetting industry
+        
         </p>
       </div>
       <div className="imgfooter">

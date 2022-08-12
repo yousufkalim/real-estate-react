@@ -88,9 +88,7 @@ const Features = ({ cRef }) => {
                 </CardContent>
                 <div className="plaintext">
                   <p className="card_p">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Viverra nunc ante velit vitae. Est tellus vitae, nullam
-                    lobortis
+                  {t("It's an easy-to-use application and it's a nice model for building a personalized web experience.")}
                   </p>
                 </div>
               </CardActionArea>
