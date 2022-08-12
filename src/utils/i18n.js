@@ -10,6 +10,8 @@ i18n
     resources: {
       en: {
         translations: {
+          "The information you share on this form is used to prepare your quote and contact you regarding our services. We will not share your information with outside parties.":"The information you share on this form is used to prepare your quote and contact you regarding our services. We will not share your information with outside parties.",
+          "It's an easy-to-use application and it's a nice model for building a personalized web experience.":"It's an easy-to-use application and it's a nice model for building a personalized web experience.",
             "About":"About",
             "Features":"Features",
             "Contactus":"Contactus",
@@ -180,8 +182,8 @@ i18n
             "We provide ourselves in delivering high-":"Nous nous fournissons dans la livraison de haute-",
             "quality work for our partners.":"un travail de qualité pour nos partenaires.",
 
-            
-          
+            "The information you share on this form is used to prepare your quote and contact you regarding our services. We will not share your information with outside parties.":"Les informations que vous partagez sur ce formulaire sont utilisées pour préparer votre devis et vous contacter concernant nos services. Nous ne partagerons pas vos informations avec des tiers.",
+          "It's an easy-to-use application and it's a nice model for building a personalized web experience.":"C'est une application facile à utiliser et c'est un bon modèle pour créer une expérience Web personnalisée.",
         "App Features":"Fonctionnalités de l'application",
         "Economic services provided by the finance industry, which encompasses":"Les services économiques fournis par le secteur financier, qui englobe",
        "a broad range of businesses that manage money, including credit unions.":"un large éventail d'entreprises qui gèrent de l'argent, y compris les coopératives de crédit.",

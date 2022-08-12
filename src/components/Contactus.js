@@ -36,9 +36,7 @@ const Contactus = ({ cRef }) => {
               </div>
 
               <div className="text3">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra
-                nunc ante velit vitae. Est tellus vitae, nullam lobortis enim.
-                Faucibus amet etiam tincidunt rhoncus, ullamcorper
+              {t("The information you share on this form is used to prepare your quote and contact you regarding our services. We will not share your information with outside parties.")}
               </div>
             </div>
             <div className="imgquote">
